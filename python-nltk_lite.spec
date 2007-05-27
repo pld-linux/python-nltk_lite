@@ -13,6 +13,7 @@ Source0:	http://dl.sourceforge.net/nltk/nltk_lite-%{version}.tar.gz
 URL:		http://nltk.sourceforge.net/
 %pyrequires_eq	python
 BuildRequires:	python-devel
+BuildRequires:	rpmbuild(macros) >= 1.219
 BuildRequires:	unzip
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
