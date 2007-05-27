@@ -11,15 +11,16 @@ Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/nltk/nltk_lite-%{version}.tar.gz
 # Source0-md5:	eece3cdf514c049051599ec3983b7186
 URL:		http://nltk.sourceforge.net/
-%pyrequires_eq	python
 BuildRequires:	python-devel
+BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 BuildRequires:	unzip
+%pyrequires_eq	python
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The Natural Langauge Toolkit (NLTK-Lite) is a Python module for
+The Natural Language Toolkit (NLTK-Lite) is a Python module for
 processing natural language text. It was developed as a simpler,
 lightweight version of NLTK.
 
