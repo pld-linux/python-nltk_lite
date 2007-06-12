@@ -1,0 +1,9 @@
+diff -ur nltk_lite-0.7.5-orig/nltk_lite/wordnet/__init__.py nltk_lite-0.7.5/nltk_lite/wordnet/__init__.py
+--- nltk_lite-0.7.5-orig/nltk_lite/wordnet/__init__.py	2007-05-16 10:54:51.000000000 +0200
++++ nltk_lite-0.7.5/nltk_lite/wordnet/__init__.py	2007-06-12 17:02:21.571832589 +0200
+@@ -554,5 +554,4 @@
+ 
+ from cache import *
+ from lexname import *
+-from similarity import *
+ from wordnet import *
