@@ -5,11 +5,12 @@ Summary:	Natural Language Toolkit
 Summary(pl.UTF-8):	Przybornik obsługi języków naturalnych (Natural Language Toolkit)
 Name:		python-%{module}
 Version:	0.7.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/nltk/nltk_lite-%{version}.tar.gz
 # Source0-md5:	eece3cdf514c049051599ec3983b7186
+Patch0:		%{name}-no-similarity.patch
 URL:		http://nltk.sourceforge.net/
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
@@ -31,6 +32,7 @@ jako prostsza, lekka wersja NLTK.
 
 %prep
 %setup  -q -n %{module}-%{version}
+%patch0 -p1
 
 %build
 python ./setup.py build
