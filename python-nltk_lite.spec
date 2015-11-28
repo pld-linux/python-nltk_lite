@@ -35,12 +35,12 @@ jako prostsza, lekka wersja NLTK.
 %patch0 -p1
 
 %build
-python ./setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python ./setup.py install \
+%py_install \
 	--optimize 2 \
 	--root=$RPM_BUILD_ROOT
 
