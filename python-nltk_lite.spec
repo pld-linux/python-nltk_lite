@@ -14,7 +14,7 @@ Patch0:		%{name}-no-similarity.patch
 URL:		http://nltk.sourceforge.net/
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	unzip
 %pyrequires_eq	python
 BuildArch:	noarch
